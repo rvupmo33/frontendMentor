@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+    *{margin: 0; padding: 0;  font-family: "Figtree", sans-serif;}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{background-color: hsl(47, 88%, 63%);}
+    .card{background-color: white;width: 384px;height: 522px; border-radius: 20px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction:column; box-shadow: 8px 8px; border: 1px solid black;}
+    .card img{width: 336px; height: 200px;  margin: 24px; border-radius: 10px;}
+    .card #tag{margin-left: 24px;margin-bottom: 12px; background-color: hsl(47, 88%, 63%); width: 82px; text-align: center; padding: 4px 0px; border-radius: 4px; font-weight: 800; font-size: 14px; line-height: 150%;}
+    .card #date{font-size: 14px; margin-left: 24px; font-weight: 500; margin-bottom: 12px; line-height: 150%;}
+    .card h1{font-size: 24px; margin-left: 24px; margin-bottom: 12px;}
+    .card #text{color: hsl(0, 0%, 50%);margin-left: 24px; line-height: 150%; font-size: 16px; font-weight: 400;}
+    .content{margin-bottom: 24px;}
+    .person{display: flex; align-items: center; width: 129px; margin-left: 24px;}
+    .person img{width: 32px; height: auto; margin: 0;}
+    .person p{font-size: 14px; font-weight: 800; margin-left: 12px;line-height: 150%;}
+    #title:hover{
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="card">
+    <img src="images/illustration-article.svg">
+    <div class="content">
+    <p id="tag">Learning</p>
+    <p id="date">Published 21 Dec 2023</p>
+    <h1 id="title">HTML & CSS foundations</h1>
+    <p id="text">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </div>
+    <div class="person">
+      <img src="images/image-avatar.webp">
+      <p>Greg Hooper</p>
+    </div>
+  </div>
+
+  <!-- Learning
+
+  Published 21 Dec 2023
+
+  HTML & CSS foundations
+
+  These languages are the backbone of every website, defining structure, content, and presentation. -->
+
+  <!-- Greg Hooper -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+<script>
+  let title = document.querySelector("#title")
+  let card = document.querySelector(".card")
+  title.addEventListener("mouseover", event =>{
+    card.style.boxShadow = "16px 16px";
+    title.style.color = "hsl(47, 88%, 63%)"
+  })
+  title.addEventListener("mouseout", event =>{
+    card.style.boxShadow = "8px 8px";
+    title.style.color = "black"
+  })
+</script>
+</html>

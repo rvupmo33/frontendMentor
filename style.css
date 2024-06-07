@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+*{
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+
+header{
+  padding: 10px;
+  font-size: 10px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(206, 191, 220);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name{
+  display: flex;
+  align-items: center;
+}
+
+.socials{
+  background-color: rgb(28, 27, 27);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 30px;
+  display: flex;
+}
+
+.socials img{
+  border-radius: 50%;
+}
+
+.s-text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.s-text h1{color: white;}
+
+.s-text p{
+  color: rgb(162, 162, 162);
+  font-size: 20px;
+}
+
+.s-text #s-text{
+  color: white;
+  font-size: 16px;
+  margin: 18px 0px;
+}
+
+.s-text button{
+  width: 200px;
+  background-color: rgb(72, 70, 70);
+  border: 1px solid rgb(117, 114, 114);
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+}
+
+.s-text button:hover{
+  background-color: rgb(100, 95, 95);
+  border: 1px solid rgb(150, 147, 147);
+}
+
+.p-count{
+  display: flex;
+  align-items: center;
+  background-color: rgb(72, 70, 70);
+  border: 1px solid rgb(117, 114, 114);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.p-count h2{
+  color: white;
+}
+
+.p-count label{
+  color: white;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.labels{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  margin-bottom: 10px;
+}
+
+header img{
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 35px;
+}
+
+.box{
+  /* background-color: rgb(233, 255, 227); */
+  /* border: 1px solid rgb(166, 195, 159); */
+  border-top: 1px solid rgb(202, 202, 202);
+  margin: 0px 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-box{
+  border-top: 1px solid rgb(202, 202, 202);
+  border-bottom: 1px solid rgb(202, 202, 202);
+  margin: 0px 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-box:hover,
+.box:hover{
+  background-color: rgb(226, 226, 226);
+}
+
+@media (max-width: 700px) {
+  .s-text{
+    padding-right: 10px;
+  }
+  .s-text p{
+    font-size: 14px;
+  }
+  .s-text #s-text{
+    font-size: 11px;
+  }
+  .s-text button{
+    width: 150px;
+  }
+}

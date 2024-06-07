@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    *{margin: 0; padding: 0; font-family: "Outfit", sans-serif;}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-color: hsl(212, 45%, 89%);
+    }
+
+    .card{
+      background-color: hsl(0, 0%, 100%);
+      box-shadow: 0px 1px 20px rgb(179, 179, 179);
+      width: 320px;
+      height: 497px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* padding: 16px;
+      padding-bottom: 24px; */
+      /* padding-top: 16px; */
+      text-align: center;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card img{
+      margin-top: 16px;
+      height: 288px;
+      border-radius: 10px;
+      margin-bottom: 28px;
+    }
+
+    .card-text h4{
+      font-size: 22px;
+      color: hsl(218, 44%, 22%);
+      margin-bottom: 16px;
+    }
+
+    .card-text p{
+      font-size: 15px;
+      color: rgb(146, 146, 146);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-img">
+      <img src="images/image-qr-code.png" alt="">
+    </div>
+    <div class="card-text">
+      <h4>
+        Improve your front-end<br>skills by building projects
+      </h4>
+      <p>
+        Scan the QR code to visit Frontend<br>Mentor and take your coding skills to<br>the next level
+      </p>
+    </div>
+  </div>
+  
+<!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/rvupmo33" target="_blank">Jellyfish</a>.
+  </div> -->
+</body>
+</html>
