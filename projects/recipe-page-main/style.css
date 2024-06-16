@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-:root{
+:root {
   --White: hsl(0, 0%, 100%);
   --RoseWhite: hsl(330, 100%, 98%);
   --Eggshell: hsl(30, 54%, 90%);
@@ -18,10 +18,9 @@
   --DarkRaspberry: hsl(332, 51%, 32%);
 }
 
-body{
+body {
   background-color: var(--Eggshell);
 }
-
 
 main {
   background-color: var(--White);
@@ -33,29 +32,29 @@ main {
   padding: 40px;
 }
 
-main img{
+main img {
   width: 655px;
   height: 300px;
   border-radius: 10px;
   margin-bottom: 40px;
 }
 
-main h1{
+main h1 {
   font-size: 40px;
   font-weight: 400;
   font-family: "Young Serif", serif;
   margin-bottom: 20px;
 }
 
-main p{
-  font-family: "Outfit", sans-serif; 
+main p {
+  font-family: "Outfit", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: var(--WengeBrown);
   line-height: 25px;
 }
 
-.preptime{
+.preptime {
   height: 180px;
   background-color: var(--RoseWhite);
   padding: 27px;
@@ -63,8 +62,8 @@ main p{
   border-radius: 10px;
 }
 
-.preptime h3{
-  font-family: "Outfit", sans-serif; 
+.preptime h3 {
+  font-family: "Outfit", sans-serif;
   color: var(--DarkRaspberry);
   line-height: 150%;
   margin-bottom: 10px;
@@ -72,21 +71,22 @@ main p{
 }
 
 .preptime ul,
-main ul{
+main ul,
+#numberedOL {
   margin-left: 15px;
 }
 
-.preptime li{
-  font-family: "Outfit", sans-serif; 
+.preptime li {
+  font-family: "Outfit", sans-serif;
   color: var(--WengeBrown);
 }
 
-.preptime li::marker{
+.preptime li::marker {
   color: var(--DarkRaspberry);
   font-size: 13px;
 }
 
-main h2{
+main h2 {
   margin-top: 30px;
   margin-bottom: 20px;
   color: var(--Nutmeg);
@@ -94,28 +94,52 @@ main h2{
   font-family: "Young Serif", serif;
 }
 
-main li span{
-  margin-left: 15px;
-  font-family: "Outfit", sans-serif; 
-  line-height: 200%;
+main li {
+  font-family: "Outfit", sans-serif;
+  line-height: 150%;
+  padding-left: 19px;
+  color: var(--WengeBrown);
+  margin-top: 10px;
 }
 
-main li::marker{
+main li::marker {
   color: var(--Nutmeg);
   font-size: 13px;
+  padding: 50px;
 }
 
 hr {
   margin: 25px 0px;
-  border: 1px solid var(--LightGrey); 
+  border: 1px solid var(--LightGrey);
 }
 
-#numberedOL::marker{
+#numberedOL::marker {
   font-weight: 800;
-  font-family: "Outfit", sans-serif; 
+  font-family: "Outfit", sans-serif;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
+td {
+  padding: 12px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  border-bottom: 1px solid var(--LightGrey);
+}
+
+#vals,
+#Lastvals {
+  color: var(--Nutmeg);
+  font-weight: 600;
+}
+
+#LastName,
+#Lastvals {
+  border: none;
+}
 
 /* 
 font-family: "Young Serif", serif;
