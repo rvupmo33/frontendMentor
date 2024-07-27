@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
-
-*{
+* {
   font-family: "Nunito Sans", sans-serif;
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +9,7 @@
   color: black;
 }
 
-header{
+header {
   padding: 10px;
   font-size: 10px;
   background-color: rgb(255, 255, 255);
@@ -20,12 +19,12 @@ header{
   justify-content: space-between;
 }
 
-.name{
+.name {
   display: flex;
   align-items: center;
 }
 
-.socials{
+.socials {
   background-color: rgb(28, 27, 27);
   border-radius: 10px;
   padding: 20px;
@@ -33,46 +32,53 @@ header{
   display: flex;
 }
 
-.socials img{
+.socials img {
   border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
-.s-text{
+.s-text {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 50%;
 }
 
-.s-text h1{color: white;}
-
-.s-text p{
-  color: rgb(162, 162, 162);
-  font-size: 20px;
-}
-
-.s-text #s-text{
+.s-text h1 {
   color: white;
-  font-size: 16px;
-  margin: 18px 0px;
+  font-size: 15px;
 }
 
-.s-text button{
-  width: 200px;
+.s-text p {
+  color: rgb(162, 162, 162);
+  font-size: 13px;
+}
+
+.s-text #s-text {
+  color: white;
+  font-size: 13px;
+  margin: 5px 0px;
+}
+
+.s-text button {
+  margin-top: 5px;
   background-color: rgb(72, 70, 70);
   border: 1px solid rgb(117, 114, 114);
-  padding: 5px;
+  padding: 5px 30px;
   border-radius: 10px;
+  font-size: 12px;
   color: white;
 }
 
-.s-text button:hover{
+.s-text button:hover {
   background-color: rgb(100, 95, 95);
   border: 1px solid rgb(150, 147, 147);
+  cursor: pointer;
 }
 
-.p-count{
+.p-count {
   display: flex;
   align-items: center;
   background-color: rgb(72, 70, 70);
@@ -81,31 +87,31 @@ header{
   padding: 5px 10px;
 }
 
-.p-count h2{
+.p-count h2 {
   color: white;
 }
 
-.p-count label{
+.p-count label {
   color: white;
   margin-left: 10px;
   font-size: 15px;
 }
 
-.labels{
+.labels {
   display: flex;
   justify-content: space-between;
   margin: 30px;
   margin-bottom: 10px;
 }
 
-header img{
+header img {
   border: 1px solid black;
   border-radius: 50%;
   margin-right: 10px;
   width: 35px;
 }
 
-.box{
+.box {
   /* background-color: rgb(233, 255, 227); */
   /* border: 1px solid rgb(166, 195, 159); */
   border-top: 1px solid rgb(202, 202, 202);
@@ -115,7 +121,7 @@ header img{
   justify-content: space-between;
 }
 
-.last-box{
+.last-box {
   border-top: 1px solid rgb(202, 202, 202);
   border-bottom: 1px solid rgb(202, 202, 202);
   margin: 0px 30px;
@@ -125,21 +131,24 @@ header img{
 }
 
 .last-box:hover,
-.box:hover{
+.box:hover {
   background-color: rgb(226, 226, 226);
 }
 
 @media (max-width: 700px) {
-  .s-text{
+  .s-text {
     padding-right: 10px;
   }
-  .s-text p{
+  .s-text p {
     font-size: 14px;
   }
-  .s-text #s-text{
+  .s-text #s-text {
     font-size: 11px;
   }
-  .s-text button{
+  .s-text button {
     width: 150px;
+  }
+  .p-count {
+    display: none;
   }
 }
